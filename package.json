@@ -2,6 +2,7 @@
   "name": "sqrl-client",
   "version": "0.1.0",
   "private": true,
+  "main": "public/electron.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +12,8 @@
     "test:coverage": "jest --coverage",
     "prepare": "husky install",
     "format": "prettier --write .",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "electron": "electron ."
   },
   "dependencies": {
     "@apollo/client": "^3.6.6",
@@ -59,6 +61,7 @@
     "autoprefixer": "^10.4.2",
     "babel-jest": "^28.1.0",
     "dayjs": "^1.10.6",
+    "electron": "^22.0.0",
     "eslint": "^8.18.0",
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
